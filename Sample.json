@@ -1,0 +1,71 @@
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Barron's"
+      },
+      "author": "Adam Clark, Giulia Petroni, Dow Jones Newswires, Miriam Mukuru, Dow Jones Newswires, Renae Dyer, Dow Jones Newswires, Emese Bartha, Dow Jones Newswires",
+      "title": "Dow Set to Open Down as Trump Tariff Threats Hit Nvidia-Led Market Rally - Barron's",
+      "description": "Dow and S&P 500 futures are falling in premarket trading, the Nasdaq 100 is edging up. An Nvidia-led rally fades as the stock market reacts to President Donald Trump threating a 50% tariff on goods from Brazil.",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-071025",
+      "urlToImage": "https://images.barrons.com/im-783602/social",
+      "publishedAt": "2025-07-10T11:42:00Z",
+      "content": "U.S. stock futures were mostly pointing to losses at the market open on Thursday, as President Donald Trumps latest tariff announcements threatened to pour cold water on the previous days Nvidia-led … [+1506 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNBC"
+      },
+      "author": "Leslie Josephs",
+      "title": "Delta cuts 2025 profit outlook, but CEO says demand has stabilized - CNBC",
+      "description": "Delta cut its 2025 forecast after tariffs and hesitant consumers hit the brakes on trips this year.",
+      "url": "https://www.cnbc.com/2025/07/10/delta-air-lines-dal-2q-2025-earnings.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108065740-1732118086916-gettyimages-2183911896-urbanandsport-deltaboe241008_npwPl.jpeg?v=1743111387&w=1920&h=1080",
+      "publishedAt": "2025-07-10T10:30:29Z",
+      "content": "Delta Air Lines reinstated its 2025 profit outlook Thursday and said it expects a stronger outlook for summer travel than Wall Street anticipated.\r\nBookings have stabilized after months of lower-than… [+3442 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "",
+      "title": "Kerr County struggled to fund flood warnings. Under Trump, it's getting even harder - NPR",
+      "description": "Kerr County applied for federal grants to build a warning system to protect residents from flash floods. Under the Trump administration, that kind of funding is drying up.",
+      "url": "https://www.npr.org/2025/07/10/nx-s1-5461091/texas-flooding-warning-system-fema",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1024x576+0+107/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F64%2Ffd%2F72fea98f4961b082484f8c6c4453%2Fgettyimages-2223449515.jpg",
+      "publishedAt": "2025-07-10T09:54:01Z",
+      "content": "Years before the flooding took more than 90 lives in Kerr County, Texas, local officials knew residents faced threats from rapidly rising water. They started planning a flood warning system, one that… [+9350 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Slate Magazine"
+      },
+      "author": "Imogen West-Knights",
+      "title": "Lena Dunham’s Netflix Show May Finally Be Our Successor to Girls - Slate Magazine",
+      "description": "Too Much is messy, compelling, and classic Dunham.",
+      "url": "https://slate.com/culture/2025/07/too-much-netflix-lena-dunham-show-megan-stalter-uk.html",
+      "urlToImage": "https://compote.slate.com/images/e111db97-4be7-42f4-9992-8231039e0a16.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=1560",
+      "publishedAt": "2025-07-10T09:45:00Z",
+      "content": "Americans think British people are snotty and pretentious but smart. British people think Americans are stupid and vulgar but funny, a family member tells Jessica, the protagonist of Lena Dunhams new… [+6627 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Samsung.com"
+      },
+      "author": null,
+      "title": "[Galaxy Unpacked 2025] The Next Chapter in Personalized, Multimodal Galaxy Innovation - samsung.com",
+      "description": "On July 9, Samsung Electronics hosted Galaxy Unpacked 2025 in Brooklyn — a borough known for its culture, creativity and spirit of collaboration. Under",
+      "url": "https://news.samsung.com/global/galaxy-unpacked-2025-the-next-chapter-in-personalized-multimodal-galaxy-innovation",
+      "urlToImage": "https://img.global.news.samsung.com/global/wp-content/uploads/2025/07/Samsung-Mobile-Galaxy-Unpacked-July-2025-Unpacked-Highlight-Sketch_thumb728.jpg",
+      "publishedAt": "2025-07-10T00:02:54Z",
+      "content": "Galaxy Unpacked 2025 took place at Duggal Greenhouse in Brooklyn.\r\nOn July 9, Samsung Electronics hosted Galaxy Unpacked 2025 in Brooklyn a borough known for its culture, creativity and spirit of col… [+8869 chars]"
+    }
+  ]
+}
