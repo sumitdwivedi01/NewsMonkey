@@ -1,13 +1,15 @@
 import React ,{useEffect , useState} from 'react'
 import NewsItem from './NewsItem'
 import newsLogo from './newsLogo.png';
+import darkLogo from './Dark_logo.png';
 import Spinner from './Spinner';
 import PropTypes from 'prop-types';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 
-const News=({setProgress ,apiKey,  pageSize, country, category, clr})=>{
+
+const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
   
   const capitalizeFirstLetter =(str)=> {
   if (!str) return ''; // handle empty string
@@ -59,7 +61,7 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr})=>{
   }
     return (
       <>
-       <h1 className='text-center' style={{margin: '30px 0px'}}>NewsMonkey -Top {capitalizeFirstLetter(category)} Headlines</h1>
+       <h1 className={`text-center text-${theme==='light'?'dark':'light'}`} style={{margin: '30px 0px'}}>NewsMonkey -Top {capitalizeFirstLetter(category)} Headlines</h1>
        
        {/* {articles.map((element)=>{console.log(element)})} this is pointing to every object of articles here we will use this to itirate news cards individually */}
         
@@ -79,7 +81,7 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr})=>{
        
            articles.map((element)=>{
                 return <div className='col-md-4 my-3' key={element.url}>
-                <NewsItem title={element.title} description={element.description} imgUrl={!element.urlToImage?newsLogo:element.urlToImage} newsUrl={element.url} date={element.publishedAt} author={element.author?element.author:"unknown"} source={element.source.name} color={clr}/>
+                <NewsItem title={element.title} description={element.description} imgUrl={!element.urlToImage?(theme==='light'?newsLogo:darkLogo):element.urlToImage} newsUrl={element.url} date={element.publishedAt} author={element.author?element.author:"unknown"} source={element.source.name} color={clr} theme={theme}/>
                 </div>
                 
               }) 

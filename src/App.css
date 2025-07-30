@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.news-card-dark:hover{
+  border: 1px solid rgb(12, 16, 68);
+  background-color: #0b152a!important;
+  cursor: pointer;
+}
+
+.news-card-light:hover{
+  cursor: pointer;
+  background-color: #e0e3e6!important;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+  opacity: 1;
+}
+.news-card img{
+  opacity: 0.9;
+}
+.news-card:hover img{
+  opacity: 1;
+}
