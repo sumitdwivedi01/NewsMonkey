@@ -56,9 +56,6 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
       <>
        <h1 className={`text-center text-${theme==='light'?'dark':'light'}`} style={{margin: '30px 0px'}}>NewsMonkey -Top {capitalizeFirstLetter(category)} Headlines</h1>
        
-       {/* {articles.map((element)=>{console.log(element)})} this is pointing to every object of articles here we will use this to itirate news cards individually */}
-        
-       
        {loading && 
        <div className="container">
        <div className="row">
@@ -67,7 +64,7 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
               </div> }
 
        <InfiniteScroll
-          dataLength={articles.length} //This is important field to render the next data
+          dataLength={articles.length} 
           next={fetchMoreData}
           hasMore={articles.length !==totalResults}
           loader={
