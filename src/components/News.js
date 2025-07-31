@@ -1,11 +1,11 @@
 import React ,{useEffect , useState} from 'react'
-import NewsItem from './NewsItem'
+import NewsItem from './NewsItem';
 import newsLogo from './newsLogo.png';
 import darkLogo from './Dark_logo.png';
-import Spinner from './Spinner';
 import PropTypes from 'prop-types';
 import InfiniteScroll from 'react-infinite-scroll-component';
-
+import 'react-loading-skeleton/dist/skeleton.css'
+import CardSkeleton from './CardSkeleton';
 
 
 
@@ -30,7 +30,6 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
         setProgress(30);
         let response = await data.json();
         setProgress(60);
-        // this.setState({ articles:response.articles , totalResults:response.totalResults , loading:false})
         setArticles(response.articles)
         setTotalResults(response.totalResults)
         setLoading(false);
@@ -48,12 +47,6 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
         setLoading(true);
         let data = await fetch(url);
         let response = await data.json();
-        // this.setState({
-        //   articles: articles.concat(response.articles),
-        //   totalResults: response.totalResults,
-        //   loading: false,
-        //   page:nextPage
-        // });
         setArticles(articles.concat(response.articles));
         setTotalResults(response.totalResults);
         setLoading(false);
@@ -66,17 +59,29 @@ const News=({setProgress ,apiKey,  pageSize, country, category, clr , theme})=>{
        {/* {articles.map((element)=>{console.log(element)})} this is pointing to every object of articles here we will use this to itirate news cards individually */}
         
        
-       {loading && <Spinner/>}
+       {loading && 
+       <div className="container">
+       <div className="row">
+              <CardSkeleton theme={theme} cards={6}/>
+       </div>
+              </div> }
 
        <InfiniteScroll
           dataLength={articles.length} //This is important field to render the next data
           next={fetchMoreData}
           hasMore={articles.length !==totalResults}
-          loader={<Spinner/>}>
+          loader={
+            <div className='container'>
+            <div className="row container">
+              <CardSkeleton theme={theme} cards={3}/>
+            </div>
+              </div>}
+              >
 
 
             <div className="container">
             <div className="row container">
+              
        {
        
            articles.map((element)=>{

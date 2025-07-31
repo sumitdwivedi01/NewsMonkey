@@ -1,4 +1,5 @@
 import React  from "react";
+import '../App.css';
 import {
   Link 
 } from "react-router-dom";
@@ -6,7 +7,6 @@ const Navbar =({theme , switchTheme})=> {
   const handleModeChange =(e)=>{
     const newTheme = e.target.checked?'dark':'light';
     switchTheme(newTheme);
-    console.log(newTheme);
   }
 
     return (
@@ -15,7 +15,7 @@ const Navbar =({theme , switchTheme})=> {
         <div className="container-fluid">
             <Link className={`navbar-brand text-${theme==='light'?'dark':'light'}`} to="/">NewsMonkey</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <span className={`navbar-toggler-icon ${theme === 'light' ? 'toggler-dark' : 'toggler-light'}`}></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">

@@ -11,9 +11,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { SkeletonTheme } from 'react-loading-skeleton';
 
 const App =()=> {
-  let pageSize=5;
+  let pageSize=6;
   let country="us";
   let apiKey=process.env.REACT_APP_NEWS_API;
 
@@ -36,6 +37,7 @@ const App =()=> {
         color="#f11946"
         progress={progress}
       />
+      <SkeletonTheme baseColor={theme==='light'?'#e0e0e0':'#0f1b33'} highlightColor={theme==='light'?'#f5f5f5':'#1d2c4d'}>
         <Routes>
           <Route path='/'  element={<News theme={theme} setProgress={setProgress} apiKey={apiKey} key="general"pageSize={pageSize} country={country} category='general' clr={'info'}/>}  ></Route>
           <Route path='/business' element={<News theme={theme} setProgress={setProgress} apiKey={apiKey} key="business" pageSize={pageSize} country={country} category='business' clr={'primary'}/> } ></Route>
@@ -46,6 +48,7 @@ const App =()=> {
           <Route path='/sports' element={<News theme={theme} setProgress={setProgress} apiKey={apiKey} key="sports" pageSize={pageSize} country={country} category='sports' clr={'warning'}/>}> </Route>
           <Route path='/technology' element={<News theme={theme} setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country={country} category='technology' clr={'dark'} />}> </Route>
         </Routes>
+        </SkeletonTheme>
       </Router>
       </>
     )
